@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         primaryExtraLight: ["LufgaExtraLight"],
         primaryLight: ["LufgaLight"],
+        primaryThin: ["LufgaThin"],
         primaryMedium: ["LufgaMedium"],
         primaryRegular: ["LufgaRegular"],
         primarySemiBold: ["LufgaSemiBold"],
