@@ -1,6 +1,11 @@
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import Pricing from "./components/Pricing";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +29,13 @@ function App() {
         </div>
       </main>
     </>
+    <div className="content-grid all | min-h-dvh">
+      <Navbar/>
+      <HeroSection/>
+      <Pricing/>
+      <Features/>
+      <Footer/>
+    </div>
   );
 }
 
