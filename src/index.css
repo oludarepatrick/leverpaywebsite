@@ -69,6 +69,7 @@
 
 body {
   background-color: var(--blue-shade-15);
+  color: #fff;
 }
 
 .screen_height {
@@ -77,11 +78,6 @@ body {
 
 .scroll_rm::-webkit-scrollbar {
   display: none;
-}
-
-body {
-  background-color: #110229;
-  color: #fff;
 }
 
 .content-grid {
@@ -102,7 +98,8 @@ body {
     [content-start] min(
       100% - (var(--padding-inline) * 2),
       var(--content-max-width)
-    ) /* choosing which is smaller */
+    )
+    /* choosing which is smaller */
     [content-end]
     minmax(0, var(--breakout-size))
     [breakout-end]
