@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --white: #ffffff;
+    --white-shade-5: #ffffff40;
+    --black: #000000;
+    --gray-shade-0: #d9d9d9;
+    --gray-shade-5: #4d4d4d1a;
+    --orange-shade-0: #f49b09c9;
+    --orange-shade-5: #f49b09;
+    --orange-shade-10: #f0a20b;
+    --blue-shade-0: #0f3fb2;
+    --blue-shade-15: #110229;
+    --blue-shade-20: #0b0042;
+    --brown-shade-0: #cd4729;
+  }
+}
+
 @font-face {
   font-family: "LufgaExtraLight";
   src: local("LufgaExtraLight"),
@@ -48,4 +65,16 @@
   font-family: "LufgaExtraBold";
   src: local("LufgaExtraBold"),
     url("./assets/fonts/lufga/LufgaExtraBold.ttf") format("truetype");
+}
+
+body {
+  background-color: var(--blue-shade-15);
+}
+
+.screen_height {
+  height: 100svh;
+}
+
+.scroll_rm::-webkit-scrollbar {
+  display: none;
 }
