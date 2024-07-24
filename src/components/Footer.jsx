@@ -9,7 +9,7 @@ import { IoSend } from "react-icons/io5";
 const Footer = () => {
     return (
         <>
-            <div className='md:flex md:justify-between md:items-start pt-6 md:gap-4'>
+            <div className='container mx-auto md:flex md:justify-between md:items-start pt-6 px-2 md:gap-4 '>
                 <div className='md:w-2/4 md:pl-2' >
                     <img src={Logo} alt="" className='pb-12'/>
                     <p className='italic font-primarySemiBold pb-10 text-justify'>
@@ -28,7 +28,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <ul className=''>
-                    <li className='text-dimOrange font-primarySemiBold pb-2'>Navigation</li>
+                    <li className='text-orange-shade-15 font-primarySemiBold pb-2'>Navigation</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Home</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>About Us</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Features</li>
@@ -39,27 +39,27 @@ const Footer = () => {
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Partner with us</li>
                 </ul>
                 <ul className=''>
-                    <li className='text-dimOrange font-primarySemiBold pb-2'>Contact</li>
+                    <li className='text-orange-shade-15 font-primarySemiBold pb-2'>Contact</li>
                     <li className='font-primaryRegular leading-10'>+2349060898687</li>
                     <li className='font-primaryRegular leading-10'>contact@leverpay.io</li>
                 </ul>
                 <div className=''>
-                    <p className='text-dimOrange font-primarySemiBold pb-4'>Get the Latest Update</p>
+                    <p className='text-orange-shade-15 font-primarySemiBold pb-4'>Get the Latest Update</p>
                     <div className='bg-white rounded-lg flex justify-between' >
                         <input
                             type="email"
                             placeholder='Email Address'
                             className='pl-2 rounded-lg text-black font-primaryRegular placeholder:text-black focus:outline-none'
                         />
-                        <span className='bg-orange p-3 rounded-r-lg'>
+                        <span className='bg-orange-shade-10 p-3 rounded-r-lg'>
                             <IoSend/>
                         </span>
 
                     </div>
                 </div>
             </div>
-            <hr className='my-4'/>
-            <div className='pb-4 md:flex md:justify-between font-primaryRegular'>
+            <hr className='my-4 divide-gray-shade-0'/>
+            <div className=' container mx-auto pb-4 px-2 md:flex md:justify-between font-primaryRegular text-center'>
                 <span className='block text-sm pb-3'>Copyright© 2024Leverpay. All Rights Reserved.</span>
                 <span className='block text-sm'>User Terms & Conditions | Privacy Policy</span>
             </div>
