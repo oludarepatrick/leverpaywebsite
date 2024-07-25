@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
 import Features from "./components/Features";
+import Contact from "./components/Contact";
+import GetStarted from "./components/GetStarted";
 import Footer from "./components/Footer";
 
 function App() {
@@ -27,7 +29,12 @@ function App() {
         </div>
       </main> */}
       <Pricing /> 
-      <Features /> 
+      <Features />
+      {/* <div className="bg-blue-shade-0"> */}
+        <Contact/>
+      {/* </div> */}
+      <GetStarted/>
+      <hr className=' container mx-auto my-4 border-white-shade-5'/>
       <Footer />
     </div>
    

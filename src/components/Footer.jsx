@@ -58,7 +58,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <hr className='my-4 divide-gray-shade-0'/>
+            <hr className=' container mx-auto my-4 border-white-shade-5'/>
             <div className=' container mx-auto pb-4 px-2 md:flex md:justify-between font-primaryRegular text-center'>
                 <span className='block text-sm pb-3'>Copyright© 2024Leverpay. All Rights Reserved.</span>
                 <span className='block text-sm'>User Terms & Conditions | Privacy Policy</span>
