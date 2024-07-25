@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
 import Features from "./components/Features";
+import Contact from "./components/Contact";
+import GetStarted from "./components/GetStarted";
 import Footer from "./components/Footer";
 
 function App() {
@@ -18,25 +20,24 @@ function App() {
           <Hero />
         </div>
       </div>
-      <main className="mt-16">
+      {/* <main className="mt-16">
         <div className="container mx-auto p-4">
           <h1 className="text-3xl font-bold mb-4">
             Welcome to My Landing Page
           </h1>
           <p>This is a simple landing page with a responsive header.</p>
         </div>
-      </main>
-      <Pricing />
+      </main> */}
+      <Pricing /> 
       <Features />
+      {/* <div className="bg-blue-shade-0"> */}
+        <Contact/>
+      {/* </div> */}
+      <GetStarted/>
+      <hr className=' container mx-auto my-4 border-white-shade-5'/>
       <Footer />
     </div>
-    // <div className="content-grid all | min-h-dvh">
-    //   <Navbar/>
-    //   <HeroSection/>
-    //   <Pricing/>
-    //   <Features/>
-    //   <Footer/>
-    // </div>
+   
   );
 }
 
