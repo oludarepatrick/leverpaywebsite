@@ -2,6 +2,9 @@ import { useState } from "react";
 import logo from "../assets/images/leverpaylogo.svg";
 import arrowRight from "../assets/images/arrow-right.svg";
 
+import { IoMenu } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,7 +14,7 @@ const Header = () => {
 
   return (
     <div>
-      <header className="bg-gray-shade-0 p-4 w-full rounded-full text-blue-shade-20 font-primarySemiBold">
+      <header className="p-4 w-full text-white font-primarySemiBold">
         <div className="mx-auto flex justify-between items-center">
           <a href="/">
             <img
@@ -21,9 +24,9 @@ const Header = () => {
             />
           </a>
           <button className="lg:hidden block text-white" onClick={toggleMenu}>
-            Menu
+            <IoMenu className="text-white w-10 h-10" />
           </button>
-          <nav className="hidden lg:flex items-center gap-1 text-sm uppercase">
+          <nav className="hidden lg:flex items-center text-white gap-1 text-sm uppercase">
             <a
               href="#"
               className="hover:text-gray-200 px-4 py-2 bg-orange-shade-0 rounded-full text-white"
@@ -45,7 +48,7 @@ const Header = () => {
             <a href="#" className="hover:text-gray-200 px-4 py-2">
               Screenshot
             </a>
-            <button className="flex gap-2 items-center bg-orange-shade-5 p-4 text-white rounded-full uppercase">
+            <button className="flex gap-2 items-center bg-orange-shade-5 p-4 text-white rounded-[10px] uppercase">
               Merchant Login <img src={arrowRight} alt="arrow right" />
             </button>
           </nav>
@@ -58,7 +61,7 @@ const Header = () => {
       >
         <div className="flex justify-end">
           <button onClick={toggleMenu} className="text-white">
-            Close
+            <IoClose clasName="w-10 h-10"/>
           </button>
         </div>
         <nav className="mt-8 flex flex-col gap-3 text-blue-shade-20 font-primarySemiBold uppercase">
