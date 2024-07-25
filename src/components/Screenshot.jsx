@@ -1,13 +1,27 @@
-const Screenshot = () => {
-  return (
-    <div>
-      <h2>Screenshot</h2>
-      <p>
-        We are a company dedicated to providing the best services to our
-        customers.
-      </p>
-    </div>
-  );
-};
+import cardImg from "../assets/images/cards-1.png";
+import transactionImg from "../assets/images/transaction-1.png";
+import transferImg from "../assets/images/transfer-1.png";
+import dashboardImg from "../assets/images/Dashboard-1.png";
 
+const Screenshot = () => {
+    return (
+        <div className="container mx-auto px-2">
+            <h2 className="font-primarySemiBold text-3xl text-center py-8">Our App Screenshot</h2>
+            <div className="bg-blue-shade-15 grid grid-cols-2 gap-4">
+                <div className="mx-auto">
+                    <img src={cardImg} alt="card screenshot" />
+                </div>
+                <div className="mx-auto">
+                    <img src={transactionImg} alt="transaction screenshot" />
+                </div>
+                <div className="mx-auto">
+                    <img src={transferImg} alt=""/>
+                </div>
+                <div className="mx-auto">
+                    <img src={dashboardImg} alt="" className="md:-mt-24"/>
+                </div>
+            </div>
+        </div>
+    )
+}
 export default Screenshot;
