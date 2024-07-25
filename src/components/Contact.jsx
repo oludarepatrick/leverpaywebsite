@@ -3,7 +3,7 @@ const Contact = () => {
         <div className="container mx-auto bg-blue-shade-0 md:p-16 p-5">
             <div className=" font-primarySemiBold md:flex md:justify-between items-center bg-blue-shade-20 rounded-3xl">
                 <div className="md:w-2/5 p-4 pl-6 text-center md:text-left">
-                    <h2 className="text-3xl leading-tight pb-2">
+                    <h2 className="text-3xl md:text-4xl leading-tight pb-2">
                         Get in touch with <span className="text-orange-shade-10">LeverPay!</span>
                     </h2>
                     <p className="text-lg italic font">
