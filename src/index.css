@@ -18,8 +18,22 @@
     --blue-shade-10: #026ae8;
     --blue-shade-15: #110229;
     --blue-shade-20: #0b0042;
+    --blue-shade-25: #0b0230;
+    --blue-shade-30: #1b0341;
     --brown-shade-0: #cd4729;
   }
+}
+
+@font-face {
+  font-family: "Agrandir-Regular";
+  src: local("Agrandir-Regular"),
+    url("./assets/fonts/agrandir/Agrandir-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Agrandir-TextBold";
+  src: local("Agrandir-TextBold"),
+    url("./assets/fonts/agrandir/Agrandir-TextBold.otf") format("truetype");
 }
 
 @font-face {

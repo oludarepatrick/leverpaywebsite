@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <div>
-      <header className="p-4 w-full text-white font-primarySemiBold">
+      <header className="p-4 w-full bg-gray-shade-0 rounded-full text-white font-primarySemiBold">
         <div className="mx-auto flex justify-between items-center">
           <a href="/">
             <img
@@ -26,7 +26,7 @@ const Header = () => {
           <button className="lg:hidden block text-white" onClick={toggleMenu}>
             <IoMenu className="text-white w-10 h-10" />
           </button>
-          <nav className="hidden lg:flex items-center text-white gap-1 text-sm uppercase">
+          <nav className="hidden lg:flex items-center text-blue-shade-20 gap-1 text-sm uppercase">
             <a
               href="#"
               className="hover:text-gray-200 px-4 py-2 bg-orange-shade-0 rounded-full text-white"
@@ -61,7 +61,7 @@ const Header = () => {
       >
         <div className="flex justify-end">
           <button onClick={toggleMenu} className="text-white">
-            <IoClose clasName="w-10 h-10"/>
+            <IoClose className="w-10 h-10" />
           </button>
         </div>
         <nav className="mt-8 flex flex-col gap-3 text-blue-shade-20 font-primarySemiBold uppercase">
