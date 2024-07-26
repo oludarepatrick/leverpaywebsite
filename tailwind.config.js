@@ -4,6 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        primaryAgrandirRegular: ["Agrandir-Regular"],
+        primaryAgrandirBold: ["Agrandir-TextBold"],
         primaryExtraLight: ["LufgaExtraLight"],
         primaryLight: ["LufgaLight"],
         primaryThin: ["LufgaThin"],
@@ -29,6 +31,8 @@ export default {
       "blue-shade-10": "var(--blue-shade-10)",
       "blue-shade-15": "var(--blue-shade-15)",
       "blue-shade-20": "var(--blue-shade-20)",
+      "blue-shade-25": "var(--blue-shade-25)",
+      "blue-shade-30": "var(--blue-shade-30)",
       "brown-shade-0": "var(--brown-shade-0)",
     },
   },

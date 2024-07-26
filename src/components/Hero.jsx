@@ -7,13 +7,11 @@ const images = [
   {
     src: leverpayHome,
     text: "Your Best Online Payment Solution.",
-    description: "Unlocking Endless Possibilities for your Business Success",
     highlight: [2], // Index of words to be highlighted
   },
   {
     src: portraitMan,
     text: "Pay all your Bills With Leverpay at a Cheap Rate",
-    description: "Empowering Your Business with Cutting-Edge Technology",
     highlight: [3, 8], // Index of words to be highlighted
   },
   // Add more images and texts as needed
@@ -41,7 +39,7 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const { text, description, highlight } = images[index];
+  const { text, highlight } = images[index];
 
   // Function to render text with highlighted words
   const renderText = (text, highlight) => {
@@ -60,13 +58,15 @@ const Hero = () => {
   };
 
   return (
-    <div className="bg-blue-shade-5 rounded-3xl md:rounded-[80px] p-7 flex flex-col lg:flex-row gap-8 items-center h-auto lg:h-[500px] relative">
-      <div className={`transition-opacity duration-4000 ${fadeClass}`}>
-        <h1 className="max-w-[490px] leading-tight font-primarySemiBold text-[30px] md:text-[56px] text-white">
+    <div className="bg-gray-shade-5 border-[3px] border-white-shade-5 rounded-3xl md:rounded-[80px] p-3 sm:p-7 xl:px-16 flex flex-col lg:flex-row gap-8 items-center h-auto lg:h-[500px] relative">
+      <div>
+        <h1
+          className={`max-w-[490px] leading-tight font-primarySemiBold text-[30px] md:text-[56px] text-white transition-opacity duration-4000 ${fadeClass}`}
+        >
           {renderText(text, highlight)}
         </h1>
         <p className="w-[324px] font-primarySemiBold italic text-xl text-white">
-          {description}
+          Unlocking Endless Possibilities for your Business Success.
         </p>
 
         <div className="mt-8">
@@ -74,12 +74,12 @@ const Hero = () => {
             Download Now!
           </p>
           <button>
-            <img src={googlePlay} alt="googlepay" />
+            <img src={googlePlay} alt="googleplay" />
           </button>
         </div>
       </div>
       <div
-        className={`lg:absolute lg:right-0 lg:-top-10 transition-opacity duration-4000 ${fadeClass}`}
+        className={`lg:absolute lg:right-0 lg:-top-10 transition-opacity duration-4000 hidden md:block ${fadeClass}`}
       >
         <img
           src={images[index].src}
