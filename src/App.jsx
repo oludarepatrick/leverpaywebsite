@@ -12,13 +12,13 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="">
-      <div className="screen_height w-full p-4 sm:py-11 flex flex-col gap-8 overflow-hidden relative">
-        <div className="absolute -z-[1] -top-44 -left-28 bg-brown-shade-0 blur-[150px] w-[444px] h-[444px] rounded-full"></div>
-        <div className="absolute -z-[1] -bottom-44 -right-28 bg-blue-shade-0 blur-[150px] w-[444px] h-[444px] rounded-full"></div>
+      <div className="w-full p-4 sm:py-11 flex flex-col gap-8 relative">
+        {/* <div className="absolute -z-[1] -top-44 -left-28 bg-brown-shade-0 blur-[150px] w-[444px] h-[444px] rounded-full"></div> */}
+        {/* <div className="absolute -z-[1] -bottom-44 -right-28 bg-blue-shade-0 blur-[150px] w-[444px] h-[444px] rounded-full"></div> */}
         <div className="container mx-auto">
           <Header />
         </div>
-        <div className="h-full container mx-auto">
+        <div className="h-full container my-5 mx-auto">
           <Hero />
         </div>
       </div>

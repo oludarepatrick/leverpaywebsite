@@ -25,6 +25,7 @@ export default {
       "orange-shade-10": "var(--orange-shade-10)",
       "orange-shade-15": "var(--orange-shade-15)",
       "blue-shade-0": "var(--blue-shade-0)",
+      "blue-shade-5": "var(--blue-shade-5)",
       "blue-shade-10": "var(--blue-shade-10)",
       "blue-shade-15": "var(--blue-shade-15)",
       "blue-shade-20": "var(--blue-shade-20)",
