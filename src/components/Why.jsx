@@ -3,8 +3,8 @@ import thinkingLady from "../assets/images/lady_thinking.png";
 const Why = () => {
   return (
     <div className="container flex flex-col-reverse mx-auto py-5 lg:py-[170px] relative">
-      <div>
-        <h1 className="font-primaryAgrandirBold text-[32px] ml-10">
+      <div className="px-3 sm:px-0">
+        <h1 className="font-primaryAgrandirBold text-2xl sm:text-[32px] ml-10">
           Why Leverpay?
         </h1>
         <div className="rounded-[20px] bg-blue-shade-5 max-w-[833px] h-[268px] p-4">

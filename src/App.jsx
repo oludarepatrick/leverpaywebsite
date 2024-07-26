@@ -24,8 +24,10 @@ function App() {
       <div className="bg-blue-shade-30">
         <Why />
       </div>
+      <div className="container mx-auto py-10">
+        <Features />
+      </div>
       <Pricing />
-      <Features />
       {/* <div className="bg-blue-shade-0"> */}
       <Contact />
       {/* </div> */}
