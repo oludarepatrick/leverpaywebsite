@@ -27,13 +27,13 @@
 @font-face {
   font-family: "Agrandir-Regular";
   src: local("Agrandir-Regular"),
-    url("./assets/fonts/lufga/Agrandir-Regular.otf") format("truetype");
+    url("./assets/fonts/agrandir/Agrandir-Regular.otf") format("truetype");
 }
 
 @font-face {
   font-family: "Agrandir-TextBold";
   src: local("Agrandir-TextBold"),
-    url("./assets/fonts/lufga/Agrandir-TextBold.otf") format("truetype");
+    url("./assets/fonts/agrandir/Agrandir-TextBold.otf") format("truetype");
 }
 
 @font-face {
