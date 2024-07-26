@@ -35,6 +35,18 @@ export default {
       "blue-shade-30": "var(--blue-shade-30)",
       "brown-shade-0": "var(--brown-shade-0)",
     },
+    keyframes: {
+      leftScroll: {
+        '0%': { transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-100%)' },
+      },
+    },
+    animation: {
+      leftScroll: 'leftScroll 20s linear infinite',
+    },
+
+
+
   },
   plugins: [],
 };
