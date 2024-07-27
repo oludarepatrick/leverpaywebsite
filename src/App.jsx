@@ -3,6 +3,11 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
 import Features from "./components/Features";
+import Wallet from "./components/Wallet";
+import Partnership from "./components/Partnership";
+import VideoDemo from "./components/VideoDemo";
+import Partner from "./components/Partner";
+import Screenshot from "./components/Screenshot";
 import Contact from "./components/Contact";
 import GetStarted from "./components/GetStarted";
 import Footer from "./components/Footer";
@@ -28,6 +33,11 @@ function App() {
         <Features />
       </div>
       <Pricing />
+      <Wallet/>
+      <Partnership/>
+      <VideoDemo/>
+      <Partner/>
+      <Screenshot/>
       {/* <div className="bg-blue-shade-0"> */}
       <Contact />
       {/* </div> */}
