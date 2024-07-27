@@ -1,6 +1,6 @@
-import microsoft from "../assets/images/microsoft-logo.png";
+import microsoft from "../assets/images/microsoft-logo1.png";
 import providus from "../assets/images/ProvidusBank_logo.png";
-import visa from "../assets/images/Visa-logo.png";
+import vfd from "../assets/images/Visa-logo.png";
 import interswitch from "../assets/images/Interswitch_logo.png";
 
 const Partner = () => {
@@ -10,11 +10,11 @@ const Partner = () => {
             <div className="flex justify-center items-center gap-8 pb-8 animate-leftScroll">
                     <img src={microsoft} alt="" className="lg:w-44 md:w-24 w-16"/>
                     <img src={providus} alt="" className="lg:w-44 md:w-24 w-16"/>
-                    <img src={visa} alt="" className="lg:w-44 md:w-24 w-16"/>
+                    <img src={vfd} alt="" className="lg:w-44 md:w-24 w-16 lg:h-24"/>
                     <img src={interswitch} alt="" className="lg:w-44 md:w-24 w-16"/>
                     <img src={microsoft} alt="" className="lg:w-44 md:w-24 w-16"/>
                     <img src={providus} alt="" className="lg:w-44 md:w-24 w-16"/>
-                    <img src={visa} alt="" className="lg:w-44 md:w-24 w-16"/>
+                    <img src={vfd} alt="" className="lg:w-44 md:w-24 w-16 lg:h-24"/>
                     <img src={interswitch} alt="" className="lg:w-44 md:w-24 w-16"/>
             </div>
         </div>
