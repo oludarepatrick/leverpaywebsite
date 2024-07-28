@@ -12,6 +12,7 @@ import Contact from "./components/Contact";
 import GetStarted from "./components/GetStarted";
 import Footer from "./components/Footer";
 import Why from "./components/Why";
+import PaymentIntegration from "./components/PaymentIntegration";
 
 function App() {
   return (
@@ -32,12 +33,18 @@ function App() {
       <div className="container mx-auto py-10">
         <Features />
       </div>
+
+      <div className="bg-blue-shade-40">
+        <div className="container mx-auto">
+          <PaymentIntegration />
+        </div>
+      </div>
       <Pricing />
-      <Wallet/>
-      <Partnership/>
-      <VideoDemo/>
-      <Partner/>
-      <Screenshot/>
+      <Wallet />
+      <Partnership />
+      <VideoDemo />
+      <Partner />
+      <Screenshot />
       {/* <div className="bg-blue-shade-0"> */}
       <Contact />
       {/* </div> */}
