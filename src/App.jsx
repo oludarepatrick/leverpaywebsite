@@ -13,6 +13,7 @@ import GetStarted from "./components/GetStarted";
 import Footer from "./components/Footer";
 import Why from "./components/Why";
 import PaymentIntegration from "./components/PaymentIntegration";
+import Reseller from "./components/Reseller";
 
 function App() {
   return (
@@ -37,6 +38,12 @@ function App() {
       <div className="bg-blue-shade-40">
         <div className="container mx-auto">
           <PaymentIntegration />
+        </div>
+      </div>
+
+      <div className="bg-blue-shade-5">
+        <div className="container mx-auto">
+          <Reseller />
         </div>
       </div>
       <Pricing />
