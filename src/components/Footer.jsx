@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='container mx-auto md:flex md:justify-between md:items-start pt-6 px-2 md:gap-4 '>
                 <div className='md:w-2/4 md:pl-2' >
                     <img src={Logo} alt="" className='pb-12'/>
-                    <p className='italic font-primarySemiBold pb-10 text-justify'>
+                    <p className='italic font-primaryRegular pb-10 text-justify'>
                         At Leverpay, we understand the challenges startups face, 
                         and that&apos;s why we&apos;ve crafted the perfect payment solution for you.
                         Our easy integration, instant remittance, and a range of features cater 

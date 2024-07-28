@@ -1,3 +1,4 @@
+import Button from "./Button"
 const Contact = () => {
     return (
         <div className="container mx-auto bg-blue-shade-0 md:p-16 p-5">
@@ -31,7 +32,7 @@ const Contact = () => {
                         <input type="text" name="first-name" required className="border-2 border-gray-shade-0 rounded p-1" />
 
                         <div className="text-center my-2 mt-8">
-                            <button type="submit" className="bg-blue-shade-10 text-white rounded py-3 w-4/5">Submit</button>
+                            <Button className="bg-blue-shade-10 text-white rounded py-3 w-4/5">Submit</Button>
                         </div>
 
                            

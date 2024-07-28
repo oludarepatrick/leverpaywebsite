@@ -36,6 +36,7 @@ export default {
       "blue-shade-30": "var(--blue-shade-30)",
       "blue-shade-35": "var(--blue-shade-35)",
       "blue-shade-40": "var(--blue-shade-40)",
+      "blue-shade-45": "var(--blue-shade-45)",
       "brown-shade-0": "var(--brown-shade-0)",
     },
     keyframes: {

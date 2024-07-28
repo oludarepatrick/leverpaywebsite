@@ -10,7 +10,7 @@ const VideoDemo = () => {
                 <h3 className="font-primarySemiBold lg:text-2xl md:text-xl text-xs pb-2">
                     Watch Our Video Demo on how to use Leverpay APP
                 </h3>
-                <h3 className="font-primarySemiBold lg:text-2xl md:text-xl text-xs">
+                <h3 className="font-primaryAgrandirBold lg:text-2xl md:text-xl text-xs">
                     Watch Demo
                 </h3>
             </div>
