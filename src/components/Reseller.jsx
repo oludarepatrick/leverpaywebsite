@@ -1,5 +1,5 @@
 const Reseller = () => {
-  return <div>Reseller</div>;
+  return <div></div>;
 };
 
 export default Reseller;
