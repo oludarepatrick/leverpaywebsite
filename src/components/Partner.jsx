@@ -6,7 +6,7 @@ import interswitch from "../assets/images/Interswitch_logo.png";
 const Partner = () => {
     return (
         <div className="container mx-auto bg-white overflow-hidden ">
-            <h2 className="font-primarySemiBold text-blue-shade-20 text-3xl text-center py-8">Our Partners</h2>
+            <h2 className="font-primaryAgrandirBold text-blue-shade-20 text-3xl text-center py-8">Our Partners</h2>
             <div className="flex justify-center items-center gap-8 pb-8 animate-leftScroll">
                     <img src={microsoft} alt="" className="lg:w-44 md:w-24 w-16"/>
                     <img src={providus} alt="" className="lg:w-44 md:w-24 w-16"/>
