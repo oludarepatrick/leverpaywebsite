@@ -28,7 +28,7 @@ const Header = () => {
           </button>
           <nav className="hidden lg:flex items-center text-blue-shade-20 gap-1 text-sm uppercase">
             <a
-              href="#"
+              href="https://www.leverpay.io/"
               className="hover:text-gray-200 px-4 py-2 bg-orange-shade-0 rounded-full text-white"
             >
               Home
