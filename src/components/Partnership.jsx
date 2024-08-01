@@ -14,7 +14,7 @@ const Partnership = () => {
                     <li className="bg-blue-shade-15 font-primaryRegular text-base p-4 pl-6 rounded-lg">Free integration into our mobile app</li>
                 </ul>
                 <div className="md:mt-[-11rem]">
-                    <img src={portrait} alt="image here" className="md:h-[600px] h-[400px] mx-auto" />
+                    <img src={portrait} alt="image here" className="md:max-h-[600px] max-h-[400px] mx-auto" />
                 </div>
             </div>
         </div>

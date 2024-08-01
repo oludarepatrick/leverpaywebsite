@@ -31,7 +31,7 @@ const Features = () => {
         </h2>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10 xl:gap-20">
-          <div className="w-full h-[700px] sm:w-[489px] sm:h-[746px] bg-blue-shade-5 rounded-[50px] p-4 relative">
+          <div className="w-full h-[700px] sm:w-[450px] sm:h-[746px] bg-blue-shade-5 rounded-[50px] p-4 relative">
             <div className="absolute -bottom-4 sm:-right-4">
               <PaymentButton link="#" />
             </div>
@@ -53,7 +53,7 @@ const Features = () => {
               <img src={remittance} alt="remittance diagram" />
             </div>
           </div>
-          <div className="w-full h-[700px] sm:w-[489px] sm:h-[746px] bg-blue-shade-5 rounded-[50px] p-4 relative">
+          <div className="w-full h-[700px] sm:w-[450px] sm:h-[746px] bg-blue-shade-5 rounded-[50px] p-4 relative">
             <div className="absolute -bottom-4 sm:-right-4">
               <PaymentButton link="#" />
             </div>
