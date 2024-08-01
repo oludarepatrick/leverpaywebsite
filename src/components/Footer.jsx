@@ -34,14 +34,14 @@ const Footer = () => {
                 </div>
                 <ul className=''>
                     <li className='text-orange-shade-15 font-primarySemiBold pb-2'>Navigation</li>
-                    <li className='font-primaryRegular leading-10 cursor-pointer'>Home</li>
+                    <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="/home">Home</Link></li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>About Us</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Features</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Pricing</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="/terms-and-conditions">Terms and Condition</Link></li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="privacy-policy">Privacy Policy</Link></li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="risk-policy">Risk Policy</Link></li>
-                    <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="account-deactivation">Deactivation</Link></li>
+                    <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="account-deactivation">Account Deactivation</Link></li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Invest with us</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Partner with us</li>
                 </ul>
