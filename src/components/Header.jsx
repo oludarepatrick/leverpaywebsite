@@ -39,7 +39,7 @@ const Header = () => {
             <a href="#" className="hover:text-gray-200 px-4 py-2">
               Pricing
             </a>
-            <a href="https://user-dashboard-frontend-iota.vercel.app/" className="hover:text-gray-200 px-4 py-2">
+            <a href="user.leverpay.io/" className="hover:text-gray-200 px-4 py-2">
               User Login
             </a>
             <a href="#" className="hover:text-gray-200 px-4 py-2">
@@ -48,9 +48,11 @@ const Header = () => {
             <a href="#" className="hover:text-gray-200 px-4 py-2">
               Screenshot
             </a>
+            <a href="https://merchant.leverpay.io" target="_blank" rel="noopener noreferrer">
             <button className="flex gap-2 items-center bg-orange-shade-5 p-4 text-white rounded-[10px] uppercase">
-              Merchant Login <img src={arrowRight} alt="arrow right" />
+             Merchant Login <img src={arrowRight} alt="arrow right" />
             </button>
+            </a>
           </nav>
         </div>
       </header>
