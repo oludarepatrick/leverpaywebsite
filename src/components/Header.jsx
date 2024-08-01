@@ -39,8 +39,8 @@ const Header = () => {
             <a href="#" className="hover:text-gray-200 px-4 py-2">
               Pricing
             </a>
-            <a href="#" className="hover:text-gray-200 px-4 py-2">
-              Reviews
+            <a href="https://user-dashboard-frontend-iota.vercel.app/" className="hover:text-gray-200 px-4 py-2">
+              User Login
             </a>
             <a href="#" className="hover:text-gray-200 px-4 py-2">
               API
