@@ -40,11 +40,11 @@ const paymentOptions = [
 
 const PaymentIntegration = () => {
   return (
-    <div className="py-10">
-      <h1 className="text-center font-primaryAgrandirBold text-[24px] sm:text-[32px] max-w-[441px] mx-auto mb-4">
+    <div className="py-10 sm:px-10">
+      <h1 className="text-center font-primaryAgrandirBold text-blue-shade-30 text-[24px] sm:text-[32px] max-w-[441px] mx-auto mb-4">
         Merchant Payment Integration
       </h1>
-      <div className="w-full bg-blue-shade-20 rounded-lg sm:rounded-[50px] px-2 sm:px-8 py-8">
+      <div className="w-full px-2 sm:px-8 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {paymentOptions.map((option, index) => (
             <PaymentOption key={index} option={option} />

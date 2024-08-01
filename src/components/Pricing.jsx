@@ -8,7 +8,7 @@ const Pricing = () => {
                 Pricing
             </h2>
 
-            <div className="flex flex-col lg:flex-row justify-center gap-10 xl:gap-20 sm:px-24 py-8">
+            <div className="flex flex-col lg:flex-row justify-center lg:items-start items-center gap-10 xl:gap-20 sm:px-24 py-8">
                 <PricingCard
                         title="Local transaction fee"
                         fee="1.3%"

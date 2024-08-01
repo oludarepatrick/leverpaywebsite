@@ -1,4 +1,6 @@
-import leverpayHome from "../assets/images/leverpay-home.png";
+import { Fade} from 'react-awesome-reveal';
+import { Link } from 'react-router-dom';
+import leverpayHome from "../assets/images/leverpay-home-1.png";
 import portraitMan from "../assets/images/portrait-man.png";
 import googlePlay from "../assets/images/googlePlay.png";
 import React, { useEffect, useState } from "react";
@@ -74,19 +76,21 @@ const Hero = () => {
             Download Now!
           </p>
           <button>
-            <img src={googlePlay} alt="googleplay" />
+            <Link to="https://play.google.com/store/apps/details?id=com.leverpaymobiledashboard"> <img src={googlePlay} alt="googleplay" /> </Link>
           </button>
         </div>
       </div>
-      <div
-        className={`lg:absolute lg:right-0 lg:-top-10 transition-opacity duration-4000 hidden md:block ${fadeClass}`}
-      >
-        <img
-          src={images[index].src}
-          alt="leverpay home"
-          className="h-[600px]"
-        />
-      </div>
+      <Fade>
+        <div
+          className={`lg:absolute lg:right-0 lg:-top-10 transition-opacity duration-4000 hidden md:block ${fadeClass}`}
+        >
+          <img
+            src={images[index].src}
+            alt="leverpay home"
+            className="h-[600px]"
+          />
+        </div>
+      </Fade>
     </div>
   );
 };

@@ -3,7 +3,8 @@ import PaymentButton from "./PaymentButton";
 
 
 const PricingCard = ({ title, fee, features }) => (
-    <div className="w-full lg:rounded-[50px] md:w-4/5 md: rounded-3xl bg-blue-shade-5 py-8 px-4 pl-8 relative">
+    <div className="w-full lg:rounded-[50px] max-w-[389px] h-[473px] rounded-3xl bg-blue-shade-5 py-8 px-4 pl-8 relative">
+    {/* <div className="lg:rounded-[50px] md:w-4/5 md: rounded-3xl bg-blue-shade-5 py-8 px-4 pl-8 relative"> */}
         <div className="absolute -bottom-4 sm:-right-4">
               <PaymentButton link="#" className="sm:w-[90px] sm:h-[90px] w-[65px] h-[65px]" />
         </div>
@@ -23,6 +24,7 @@ const PricingCard = ({ title, fee, features }) => (
     </div>
 );
 
+ {/* max-w-[389px] max-h-[673px] md:rounded-3xl bg-blue-shade-5  */}
 
 export default PricingCard;
 
