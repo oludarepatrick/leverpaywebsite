@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
                 <ul className=''>
                     <li className='text-orange-shade-15 font-primarySemiBold pb-2'>Navigation</li>
-                    <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="/home">Home</Link></li>
+                    <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="/">Home</Link></li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>About Us</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Features</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Pricing</li>
