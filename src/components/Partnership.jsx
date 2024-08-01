@@ -22,3 +22,5 @@ const Partnership = () => {
 
 }
 export default Partnership;
+
+

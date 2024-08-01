@@ -1,3 +1,4 @@
+import portrait from "../assets/images/woman-portrait.png";
 import TextCard from "./TextCard";
 
 const resellerText = [
@@ -22,9 +23,9 @@ const resellerText = [
 const Reseller = () => {
   return (
     <div>
-      <div className="py-8">
-        <div>
-          <h1 className="text-3xl font-primaryAgrandirBold">Reseller Agent</h1>
+      <div className="py-8 px-10 flex flex-col lg:flex-row lg:justify-evenly items-center">
+        <div >
+          <h1 className="text-3xl text-center lg:text-left font-primaryAgrandirBold">Reseller Agent</h1>
           <p className="text-orange-shade-20 text-xl font-primaryMedium my-8 w-[357px]">
             Make <span className="font-primaryExtraBold">Money</span> with us
             Become our <span className="font-primaryExtraBold">agent</span> and
@@ -38,7 +39,11 @@ const Reseller = () => {
             ))}
           </div>
         </div>
-        <div></div>
+        <div className="py-4">
+          <div className="bg-white rounded-[100%] lg:max-w-[500px] lg:max-h-[500px] max-w-[400px] max-h-[400px] ">
+            <img src={portrait} alt="" />
+          </div>
+        </div>
       </div>
     </div>
   );

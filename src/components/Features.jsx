@@ -27,7 +27,7 @@ const Features = () => {
 
       <div className="mt-12 px-3 sm:px-0">
         <h2 className="font-primarySemiBold text-lg sm:text-2xl my-10 ml-0 md:ml-28 lg:ml-40">
-          Payment services
+          Payment Solutions
         </h2>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10 xl:gap-20">
@@ -65,7 +65,7 @@ const Features = () => {
               Transactions
             </h3>
 
-            <div className="flex flex-col gap-1">
+            <div className="">
               {secondPayment.map((item, index) => (
                 <FeatureList text={item} key={index} />
               ))}

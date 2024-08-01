@@ -1,4 +1,5 @@
 import Logo from '../assets/leverpay-logo.png';
+import { Link } from 'react-router-dom';
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -11,12 +12,16 @@ const Footer = () => {
         <>
             <div className='container mx-auto md:flex md:justify-between md:items-start pt-6 px-2 md:gap-4 '>
                 <div className='md:w-2/4 md:pl-2' >
-                    <img src={Logo} alt="" className='pb-12'/>
+                    <img src={Logo} alt="leverpay logo" className='pb-12'/>
                     <p className='italic font-primaryRegular pb-10 text-justify'>
                         At Leverpay, we understand the challenges startups face, 
                         and that&apos;s why we&apos;ve crafted the perfect payment solution for you.
                         Our easy integration, instant remittance, and a range of features cater 
                         specifically to your business needs.
+                    </p>
+                    <p className='italic font-primaryRegular pb-10 text-justify'>
+                        Leverpay is a financial technology companies and not a bank. Our Banking services 
+                        are provided by our partner banks who are duly licensed by the CBN.
                     </p>
                     <div className='flex gap-1 pb-4'>
                         <FaFacebookSquare size={20}/>
@@ -33,8 +38,10 @@ const Footer = () => {
                     <li className='font-primaryRegular leading-10 cursor-pointer'>About Us</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Features</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Pricing</li>
-                    <li className='font-primaryRegular leading-10 cursor-pointer'>Review</li>
-                    <li className='font-primaryRegular leading-10 cursor-pointer'>API</li>
+                    <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="/terms-and-conditions">Terms and Condition</Link></li>
+                    <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="privacy-policy">Privacy Policy</Link></li>
+                    <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="risk-policy">Risk Policy</Link></li>
+                    <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="account-deactivation">Deactivation</Link></li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Invest with us</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Partner with us</li>
                 </ul>
@@ -59,9 +66,9 @@ const Footer = () => {
                 </div>
             </div>
             <hr className=' container mx-auto my-4 border-white-shade-5'/>
-            <div className=' container mx-auto pb-4 px-2 md:flex md:justify-between font-primaryRegular text-center'>
+            <div className=' container mx-auto pb-4 px-2 md:flex md:justify-center font-primaryRegular text-center'>
                 <span className='block text-sm pb-3'>Copyright© 2024Leverpay. All Rights Reserved.</span>
-                <span className='block text-sm'>User Terms & Conditions | Privacy Policy</span>
+                {/* <span className='block text-sm'>User Terms & Conditions | Privacy Policy</span> */}
             </div>
         </>
     )

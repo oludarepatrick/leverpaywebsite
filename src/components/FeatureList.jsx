@@ -6,7 +6,7 @@ const FeatureList = ({ text }) => {
       <div className="w-8 h-8 sm:w-10 sm:h-10">
         <IoIosCheckmark className="text-orange-shade-20 w-8 h-8" />
       </div>
-      <p className="text-base sm:text-2xl font-primaryThin">{text}</p>
+      <p className="text-base font-primaryThin font-semibold ">{text}</p>
     </div>
   );
 };
