@@ -41,7 +41,7 @@ const Footer = () => {
                     <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="/terms-and-conditions">Terms and Condition</Link></li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="privacy-policy">Privacy Policy</Link></li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="risk-policy">Risk Policy</Link></li>
-                    <li className='font-primaryRegular leading-10 cursor-pointer'><a href='http://www.leverpay.io/account-deactivation' target="_blank">Account Deactivation </a></li>
+                    <li className='font-primaryRegular leading-10 cursor-pointer'><a href='http://leverpay.io/account-deactivation' target="_blank">Account Deactivation </a></li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Invest with us</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Partner with us</li>
                 </ul>
