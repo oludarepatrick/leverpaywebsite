@@ -1,7 +1,7 @@
 const Deactivation = () => {
     return (
         <div className="bg-blue-500 py-12 min-h-screen">
-            <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg">
+            <div className="container mx-auto p-6 bg-blue shadow-lg rounded-lg">
            <h1 className="font-primarySemiBold md:text-3xl text-2xl py-4">Account Deactivation!</h1>
            <h3 className="font-primarySemiBold text-xl py-4">
                 We will like to know why you want to close your account with us
