@@ -39,56 +39,7 @@ const Deactivation = () => {
                     You can also send us a WhatsApp message or request a callback at: 
                     <a href="tel:+2349060898687" className="text-blue-600 hover:underline"> +2349060898687</a>
                 </p>  
-                <form
-                    action="mailto:contact@leverpay.io"
-                    method="post"
-                    enctype="text/plain"
-                    className="space-y-4"
-                >
-                    <div>
-                        <label htmlFor="fullname" className="block text-gray-700 font-medium mb-2">
-                            Full Name
-                        </label>
-                        <input
-                            type="text"
-                            id="fullname"
-                            name="fullname"
-                            required
-                            className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        />
-                    </div>
-                    <div>
-                        <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
-                            Email Address
-                        </label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                            className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        />
-                    </div>
-                    <div>
-                        <label htmlFor="comments" className="block text-gray-700 font-medium mb-2">
-                            Comments
-                        </label>
-                        <textarea
-                            id="comments"
-                            name="comments"
-                            rows="4"
-                            className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        ></textarea>
-                    </div>
-                    <div className="text-center">
-                        <button
-                            type="submit"
-                            className="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        >
-                            Submit
-                        </button>
-                    </div>
-                </form>
+                
             </div>
         </div>
     );
