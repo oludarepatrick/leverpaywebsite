@@ -10,22 +10,21 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      {/* <Suspense fallback={<div>Loading...</div>}> */}
-        <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="terms-and-conditions" element={<TermsAndCondition />} />
-            <Route path="privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="risk-policy" element={<RiskPolicy />} />
-            <Route path="account-deactivation" element={<Deactivation />} />
-          </Route>
-        </Routes>
-      {/* </Suspense> */}
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="terms-and-conditions" element={<TermsAndCondition />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="risk-policy" element={<RiskPolicy />} />
+          <Route path="account-deactivation" element={<Deactivation />} />
+        </Route>
+      </Routes>
     </Router>
   );
 }
 
 export default App;
+
 
 
 
