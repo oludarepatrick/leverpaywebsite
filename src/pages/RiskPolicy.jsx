@@ -9,6 +9,8 @@ const RiskPolicy = () => {
 
     return (
         <div className="container mx-auto p-4 bg-white text-blue-shade-20">
+            <div className="container mx-auto p-8 bg-yellow shadow-lg rounded-lg border border-gray-200 relative before:content-[''] before:absolute before:inset-0 before:border before:border-blue-300 before:rounded-lg before:-z-10 before:opacity-50">
+            
             <h1 className="font-primarySemiBold md:text-3xl text-2xl py-4 text-center">Leverpay’s Risk Assessment Policies</h1>
             <div className="space-y-4">
                 {/* Introduction Section */}
@@ -274,6 +276,7 @@ const RiskPolicy = () => {
                     )}
                 </div>
             </div>
+        </div>
         </div>
     );
 }

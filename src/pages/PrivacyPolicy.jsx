@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
 
     return (
         <div className="bg-blue-500 py-12 min-h-screen flex items-center justify-center">
-            <div className="container mx-auto p-8 bg-blue shadow-lg rounded-lg border border-gray-200 relative before:content-[''] before:absolute before:inset-0 before:border before:border-blue-300 before:rounded-lg before:-z-10 before:opacity-50">
+           <div className="container mx-auto p-8 bg-blue shadow-lg rounded-lg border border-gray-200 relative before:content-[''] before:absolute before:inset-0 before:border before:border-blue-300 before:rounded-lg before:-z-10 before:opacity-50">
                 <h1 className="font-primarySemiBold md:text-3xl text-2xl py-4 text-center">Privacy Policy</h1>
 
                 <div className="space-y-4">
