@@ -1,6 +1,9 @@
 const PrivacyPolicy = () => {
     return (
         <div className="container mx-auto p-4 bg-white text-blue-shade-20">
+          <div className="container mx-auto p-8 bg-blue shadow-lg rounded-lg border border-gray-200 
+                            relative before:content-[''] before:absolute before:inset-0 before:border before:border-blue-300 
+                            before:rounded-lg before:-z-10 before:opacity-50">
            <h1 className="font-primarySemiBold md:text-3xl text-2xl py-4">Privacy Policy</h1>
            <p className="text-justify pb-2 leading-7 font-primaryRegular">
                 The LeverPay Privacy Policy explains your privacy entitlements concerning the collection,
@@ -108,6 +111,7 @@ const PrivacyPolicy = () => {
                 Please note that this policy may be subject to periodic revisions at our sole discretion, 
                 in order to remain in compliance with regulatory changes.
            </p>        
+        </div>
         </div>
     )
 }
