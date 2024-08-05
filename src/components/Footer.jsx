@@ -42,6 +42,9 @@ const Footer = () => {
                     <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="privacy-policy">Privacy Policy</Link></li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="risk-policy">Risk Policy</Link></li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'><Link to="account-deactivation">Accounthhh Deactivation</Link></li>
+                    <li className='font-primaryRegular leading-10 cursor-pointer'>
+                    <Link to="account-deactivation">Account Deactivation</Link></li>
+
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Invest with us</li>
                     <li className='font-primaryRegular leading-10 cursor-pointer'>Partner with us</li>
                 </ul>
