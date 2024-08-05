@@ -22,7 +22,7 @@
 const Deactivation = () => {
     return (
         <div className="bg-blue-500 py-12 min-h-screen flex items-center justify-center">
-            <div className="container mx-auto p-8 bg-white shadow-lg rounded-lg border border-gray-200 
+            <div className="container mx-auto p-8 bg-blue shadow-lg rounded-lg border border-gray-200 
                             relative before:content-[''] before:absolute before:inset-0 before:border before:border-blue-300 
                             before:rounded-lg before:-z-10 before:opacity-50">
                 <h1 className="text-3xl font-semibold text-blue-800 text-center mb-6">
