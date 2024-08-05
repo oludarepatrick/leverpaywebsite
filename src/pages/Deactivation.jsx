@@ -18,26 +18,26 @@
 
 const Deactivation = () => {
     return (
-        <div className="bg-gray-100 py-12 min-h-screen">
+        <div className="bg-gray-50 py-12 min-h-screen">
             <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg">
-                <h1 className="text-3xl font-semibold text-center text-blue-700 mb-6">
+                <h1 className="text-3xl font-semibold text-blue-800 text-center mb-6">
                     Account Deactivation
                 </h1>
-                <h3 className="text-xl font-semibold text-center text-gray-800 mb-6">
+                <h3 className="text-xl font-semibold text-gray-700 text-center mb-6">
                     We would like to know why you want to close your account with us
                 </h3>
-                <p className="text-lg text-gray-700 mb-4">
+                <p className="text-lg text-gray-800 mb-4">
                     Please send an email to: 
-                    <a href="mailto:contact@leverpay.io" className="text-blue-500 hover:underline"> contact@leverpay.io</a>
+                    <a href="mailto:contact@leverpay.io" className="text-blue-600 hover:underline"> contact@leverpay.io</a>
                 </p>
-                <p className="text-lg text-gray-700 mb-4">
+                <p className="text-lg text-gray-800 mb-4">
                     You can also send us a WhatsApp message or request a callback at: 
-                    <a href="tel:+2349060898687" className="text-blue-500 hover:underline"> +2349060898687</a>
+                    <a href="tel:+2349060898687" className="text-blue-600 hover:underline"> +2349060898687</a>
                 </p>
                 <div className="text-center mt-8">
                     <a 
                         href="/" 
-                        className="text-blue-600 hover:underline text-lg font-medium"
+                        className="text-blue-700 hover:underline text-lg font-medium"
                     >
                         Return to Home
                     </a>
@@ -48,4 +48,3 @@ const Deactivation = () => {
 }
 
 export default Deactivation;
-
