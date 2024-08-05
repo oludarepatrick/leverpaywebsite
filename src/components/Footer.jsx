@@ -20,7 +20,7 @@ const Footer = () => {
                         specifically to your business needs.
                     </p>
                     <p className='italic font-primaryRegular pb-10 text-justify'>
-                        Leverpay is a financial technology companies and not a bank. Our Banking services 
+                        Leverpay is a financial technology company and not a bank. Our Banking services 
                         are provided by our partner banks who are duly licensed by the CBN.
                     </p>
                     <div className='flex gap-1 pb-4'>
@@ -68,7 +68,7 @@ const Footer = () => {
             </div>
             <hr className=' container mx-auto my-4 border-white-shade-5'/>
             <div className=' container mx-auto pb-4 px-2 md:flex md:justify-center font-primaryRegular text-center'>
-                <span className='block text-sm pb-3'>Copyright© 2024Leverpay. All Rights Reserved.</span>
+                <span className='block text-sm pb-3'>Copyright© 2024 Leverpay. All Rights Reserved.</span>
                 {/* <span className='block text-sm'>User Terms & Conditions | Privacy Policy</span> */}
             </div>
         </>
