@@ -13,13 +13,14 @@ import GetStarted from "../components/GetStarted";
 import Why from "../components/Why";
 import PaymentIntegration from "../components/PaymentIntegration";
 import Reseller from "../components/Reseller";
+import ScrollToTop from '../components/ScrollToTop';
 
 const Home = () => {
   return (
     <>
         <Fade direction="up" triggerOnce>
             <div className="w-full p-2 sm:py-11 flex flex-col gap-8 relative">
-                <div className="container mx-auto">
+                <div className="container mx-auto" >
                     <Hero />
                 </div>
             </div>
@@ -30,7 +31,7 @@ const Home = () => {
             </div>
         </Slide>
         <Zoom triggerOnce>
-            <div className="container mx-auto py-10">
+            <div className="container mx-auto py-10" id="features">
                 <Features />
             </div>
         </Zoom>
@@ -73,6 +74,7 @@ const Home = () => {
             <GetStarted />
       </Fade>
       <hr className="container mx-auto my-4 border-white-shade-5" />
+      <ScrollToTop/>
     </>
   );
 };

@@ -24,12 +24,21 @@ const Footer = () => {
                         are provided by our partner banks who are duly licensed by the CBN.
                     </p>
                     <div className='flex gap-1 pb-4'>
-                        <FaFacebookSquare size={20}/>
-                        <IoLogoYoutube size={20}/>
-                        <IoLogoWhatsapp size={20}/>
-                        <PiInstagramLogoFill size={20}/>
-                        <FaTwitter size={20}/>
-
+                        <a href="https://www.facebook.com/" target="_blank" className="hover:text-orange-shade-5 transition duration-300">
+                            <FaFacebookSquare size={20} />
+                        </a>
+                        <a href="#" className="hover:text-orange-shade-5 transition duration-300">
+                            <IoLogoYoutube size={20} />
+                        </a>
+                        <a href="#" className="hover:text-orange-shade-5 transition duration-300">
+                            <IoLogoWhatsapp size={20} />
+                        </a>
+                        <a href="https://www.instagram.com/leverpay.io?r=nametag" className="hover:text-orange-shade-5 transition duration-300">
+                            <PiInstagramLogoFill size={20} />
+                        </a>
+                        <a href="https://twitter.com/leverpay?t=MWvBxPiogzWTMVAGGqVsPg&s=09" className="hover:text-orange-shade-5 transition duration-300">
+                            <FaTwitter size={20} />
+                        </a>
                     </div>
                 </div>
                 <ul className=''>

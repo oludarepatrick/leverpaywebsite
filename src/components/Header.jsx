@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 import logo from "../assets/images/leverpaylogo.svg";
 import arrowRight from "../assets/images/arrow-right.svg";
 
@@ -27,30 +28,69 @@ const Header = () => {
             <IoMenu className="text-white w-10 h-10" />
           </button>
           <nav className="hidden lg:flex items-center text-blue-shade-20 gap-1 text-sm uppercase">
-            <a
-              href="#"
-              className="hover:text-gray-200 px-4 py-2 bg-orange-shade-0 rounded-full text-white"
+            <Link
+              to="/"
+              spy={true}
+              smooth={true}
+              offset={50}
+              duration={500}
+              className="hover:text-gray-200 px-4 py-2 bg-orange-shade-0 rounded-full text-white cursor-pointer"
             >
               Home
-            </a>
-            <a href="#" className="hover:text-gray-200 px-4 py-2">
+            </Link>
+            <Link
+              to="features"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="hover:text-gray-200 px-4 py-2 cursor-pointer"
+            >
               Features
-            </a>
-            <a href="#" className="hover:text-gray-200 px-4 py-2">
+            </Link>
+            <Link
+              to="pricing"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="hover:text-gray-200 px-4 py-2 cursor-pointer"
+            >
               Pricing
-            </a>
-            <a href="#" className="hover:text-gray-200 px-4 py-2">
+            </Link>
+            <Link
+              to="reviews"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="hover:text-gray-200 px-4 py-2 cursor-pointer"
+            >
               Reviews
-            </a>
-            <a href="#" className="hover:text-gray-200 px-4 py-2">
+            </Link>
+            <Link
+              to="API"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="hover:text-gray-200 px-4 py-2 cursor-pointer"
+            >
               API
-            </a>
-            <a href="#" className="hover:text-gray-200 px-4 py-2">
+            </Link>
+            <Link
+              to="screenshot"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="hover:text-gray-200 px-4 py-2 cursor-pointer"
+            >
               Screenshot
-            </a>
-            <button className="flex gap-2 items-center bg-orange-shade-5 p-4 text-white rounded-[10px] uppercase">
+            </Link>
+            <a href="https://merchant.leverpay.io/welcome" target="_blank" className="flex gap-2 items-center bg-orange-shade-5 p-4 text-white rounded-[10px] uppercase">
               Merchant Login <img src={arrowRight} alt="arrow right" />
-            </button>
+            </a>
           </nav>
         </div>
       </header>

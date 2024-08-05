@@ -3,7 +3,7 @@ import PricingCard from "./PricingCarrd";
 
 const Pricing = () => {
     return (
-        <div className="container mx-auto bg-blue-shade-45 px-2 py-8">
+        <div className="container mx-auto bg-blue-shade-45 px-2 py-8" id="pricing">
             <h2 className="font-primaryAgrandirBold text-blue-shade-20 text-2xl md:text-3xl text-center">
                 Pricing
             </h2>
