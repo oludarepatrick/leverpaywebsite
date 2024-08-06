@@ -25,15 +25,13 @@ const Reseller = () => {
     <div>
       <div className="px-2 sm:px-0 flex flex-col items-center gap-14 lg:gap-5 lg:flex-row justify-evenly">
         <div className="flex justify-center items-center">
-          {/* <div className="relative flex justify-center xl:justify-self-auto rounded-full bg-white w-[350px] h-[350px] sm:w-[450px] sm:h-[450px] xl:w-[548px] xl:h-[548px]"> */}
           <img src={happyWoman} alt="smilling lady" className="" />
-          {/* </div> */}
         </div>
         <div className="py-8">
-          <h1 className="text-3xl text-center lg:text-left font-primaryAgrandirBold">
+          <h1 className="text-3xl text-blue-shade-25 text-center lg:text-left font-primaryAgrandirBold">
             Reseller Agent
           </h1>
-          <p className="text-orange-shade-20 text-xl font-primaryMedium my-8 w-[357px]">
+          <p className="text-white text-xl font-primaryMedium my-8 w-[357px]">
             Make <span className="font-primaryExtraBold">Money</span> with us
             Become our <span className="font-primaryExtraBold">agent</span> and
             earn up to <span className="font-primaryExtraBold">500k</span>{" "}
