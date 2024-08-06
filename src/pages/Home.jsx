@@ -42,7 +42,7 @@ const Home = () => {
           </div>
         </div>
       </Slide>
-      <Fade direction="down" triggerOnce>
+      <Fade direction="up" triggerOnce>
         <div className="bg-orange-shade-5">
           <div className="container mx-auto">
             <Reseller />
@@ -56,24 +56,31 @@ const Home = () => {
           </div>
         </Zoom>
       </div>
-
       <Slide direction="up" triggerOnce>
         <Wallet />
       </Slide>
       <Fade direction="left" triggerOnce>
-        <Partnership />
+        <div className="bg-white">
+          <Partnership />
+        </div>
       </Fade>
       <Zoom triggerOnce>
         <VideoDemo />
       </Zoom>
-      <Fade direction="top" triggerOnce>
-        <Partner />
-      </Fade>
-      <Fade direction="up" triggerOnce>
-        <Screenshot />
-      </Fade>
+      <div className="bg-white">
+        <Fade direction="top" triggerOnce>
+          <Partner />
+        </Fade>
+      </div>
+      <div className="bg-blue-shade-10">
+        <Fade direction="up" triggerOnce>
+          <Screenshot />
+        </Fade>
+      </div>
       <Zoom triggerOnce>
-        <Contact />
+        <div className="bg-gray-shade-0">
+          <Contact />
+        </div>
       </Zoom>
       <Fade direction="down" triggerOnce>
         <GetStarted />
