@@ -1,5 +1,5 @@
 // Home.jsx
-import { Fade, Slide, Zoom } from 'react-awesome-reveal';
+import { Fade, Slide, Zoom } from "react-awesome-reveal";
 import Hero from "../components/Hero";
 import Pricing from "../components/Pricing";
 import Features from "../components/Features";
@@ -13,76 +13,78 @@ import GetStarted from "../components/GetStarted";
 import Why from "../components/Why";
 import PaymentIntegration from "../components/PaymentIntegration";
 import Reseller from "../components/Reseller";
-import ScrollToTop from '../components/ScrollToTop';
+import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   return (
     <>
-        <Fade direction="up" triggerOnce>
-            <div className="w-full p-2 sm:py-11 flex flex-col gap-8 relative">
-                <div className="container mx-auto" >
-                    <Hero />
-                </div>
-            </div>
-        </Fade>
-        <Slide direction="left" triggerOnce>
-            <div className='bg-white'>
-                <Why />
-            </div>
-        </Slide>
-        <Zoom triggerOnce>
-            <div className="container mx-auto py-10" id="features">
-                <Features />
-            </div>
-        </Zoom>
-        <Slide direction="right" triggerOnce>
-            <div className="bg-white">
-                <div className="container mx-auto">
-                    <PaymentIntegration />
-                </div>
-            </div>
-        </Slide>
-        <Fade direction="down" triggerOnce>
-            <div className="bg-blue-shade-25">
-                <div className="container mx-auto">
-                    <Reseller />
-                </div>
-            </div>
-        </Fade>
-        <Zoom triggerOnce>
-            <Pricing />
-        </Zoom>
-        <Slide direction="up" triggerOnce>
-            <Wallet />
-        </Slide>
-        <Fade direction="left" triggerOnce>
-            <Partnership />
-        </Fade>
+      <Fade direction="up" triggerOnce>
+        <div className="w-full p-2 sm:py-11 flex flex-col gap-8 relative">
+          <div className="container mx-auto">
+            <Hero />
+          </div>
+        </div>
+      </Fade>
+      <Slide direction="left" triggerOnce>
+        <div className="bg-white">
+          <Why />
+        </div>
+      </Slide>
       <Zoom triggerOnce>
-            <VideoDemo />
+        <div className="container mx-auto py-10" id="features">
+          <Features />
+        </div>
+      </Zoom>
+      <Slide direction="right" triggerOnce>
+        <div className="bg-white">
+          <div className="container mx-auto">
+            <PaymentIntegration />
+          </div>
+        </div>
+      </Slide>
+      <Fade direction="down" triggerOnce>
+        <div className="bg-orange-shade-5">
+          <div className="container mx-auto">
+            <Reseller />
+          </div>
+        </div>
+      </Fade>
+      <div className="bg-white">
+        <Zoom triggerOnce>
+          <div className="container mx-auto">
+            <Pricing />
+          </div>
+        </Zoom>
+      </div>
+
+      <Slide direction="up" triggerOnce>
+        <Wallet />
+      </Slide>
+      <Fade direction="left" triggerOnce>
+        <Partnership />
+      </Fade>
+      <Zoom triggerOnce>
+        <VideoDemo />
       </Zoom>
       <Fade direction="top" triggerOnce>
-            <Partner />
+        <Partner />
       </Fade>
       <Fade direction="up" triggerOnce>
-            <Screenshot />
+        <Screenshot />
       </Fade>
       <Zoom triggerOnce>
-            <Contact />
+        <Contact />
       </Zoom>
       <Fade direction="down" triggerOnce>
-            <GetStarted />
+        <GetStarted />
       </Fade>
       <hr className="container mx-auto my-4 border-white-shade-5" />
-      <ScrollToTop/>
+      <ScrollToTop />
     </>
   );
 };
 
 export default Home;
-
-
-
 
 // import Hero from "../components/Hero";
 // import Pricing from "../components/Pricing";
@@ -133,7 +135,6 @@ export default Home;
 //     )
 // }
 // export default Home;
-
 
 // import Header from "./components/Header";
 // import Hero from "./components/Hero";
