@@ -31,7 +31,7 @@ const Features = () => {
         </h2>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-10 xl:gap-20">
-          <div className="w-full h-[700px] sm:w-[450px] sm:h-[746px] bg-blue-shade-5 rounded-[50px] p-4 relative">
+          <div className="w-full h-[500px] sm:w-[450px] sm:h-[746px] bg-blue-shade-5 rounded-[50px] p-4 relative">
             <div className="absolute -bottom-4 sm:-right-4">
               <PaymentButton link="#" />
             </div>
@@ -50,10 +50,14 @@ const Features = () => {
             </div>
 
             <div className="flex justify-center">
-              <img src={remittance} alt="remittance diagram" />
+              <img
+                src={remittance}
+                alt="remittance diagram"
+                className="max-sm:w-[150px]"
+              />
             </div>
           </div>
-          <div className="w-full h-[700px] sm:w-[450px] sm:h-[746px] bg-blue-shade-5 rounded-[50px] p-4 relative">
+          <div className="w-full h-[500px] sm:w-[450px] sm:h-[746px] bg-blue-shade-5 rounded-[50px] p-4 relative">
             <div className="absolute -bottom-4 sm:-right-4">
               <PaymentButton link="#" />
             </div>
