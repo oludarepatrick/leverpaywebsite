@@ -3,9 +3,9 @@ import Home from "./pages/Home";
 import Layout from "./components/Layout";
 import TermsAndCondition from "./pages/TermsAndCondition";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
-import "./App.css";
 import RiskPolicy from "./pages/RiskPolicy";
 import Deactivation from "./pages/Deactivation";
+import "./App.css";
 
 function App() {
   return (
