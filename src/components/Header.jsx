@@ -88,7 +88,11 @@ const Header = () => {
             >
               Screenshot
             </Link>
-            <a href="https://merchant.leverpay.io/welcome" target="_blank" className="flex gap-2 items-center bg-orange-shade-5 p-4 text-white rounded-[10px] uppercase">
+            <a
+              href="https://merchant.leverpay.io/welcome"
+              target="_blank"
+              className="flex gap-2 items-center bg-orange-shade-5 p-4 text-white rounded-[10px] uppercase"
+            >
               Merchant Login <img src={arrowRight} alt="arrow right" />
             </a>
           </nav>
@@ -105,30 +109,79 @@ const Header = () => {
           </button>
         </div>
         <nav className="mt-8 flex flex-col gap-3 text-blue-shade-20 font-primarySemiBold uppercase">
-          <a
-            href="#"
-            className="hover:text-gray-200 text-center px-4 py-2 bg-orange-shade-0 rounded-full text-white"
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            onClick={toggleMenu}
+            className="hover:text-gray-200 text-center px-4 py-2 bg-orange-shade-0 rounded-full text-white cursor-pointer"
           >
             Home
-          </a>
-          <a href="#" className="hover:text-gray-200 px-4 py-2 text-center">
+          </Link>
+          <Link
+            to="features"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={toggleMenu}
+            className="hover:text-gray-200 px-4 py-2 text-center cursor-pointer"
+          >
             Features
-          </a>
-          <a href="#" className="hover:text-gray-200 px-4 py-2 text-center">
+          </Link>
+          <Link
+            to="pricing"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={toggleMenu}
+            className="hover:text-gray-200 px-4 py-2 text-center cursor-pointer"
+          >
             Pricing
-          </a>
-          <a href="#" className="hover:text-gray-200 px-4 py-2 text-center">
+          </Link>
+          <Link
+            to="reviews"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={toggleMenu}
+            className="hover:text-gray-200 px-4 py-2 text-center cursor-pointer"
+          >
             Reviews
-          </a>
-          <a href="#" className="hover:text-gray-200 px-4 py-2 text-center">
+          </Link>
+          <Link
+            to="api"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={toggleMenu}
+            className="hover:text-gray-200 px-4 py-2 text-center cursor-pointer"
+          >
             API
-          </a>
-          <a href="#" className="hover:text-gray-200 px-4 py-2 text-center">
+          </Link>
+          <Link
+            to="screenshot"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            onClick={toggleMenu}
+            className="hover:text-gray-200 px-4 py-2 text-center cursor-pointer"
+          >
             Screenshot
-          </a>
-          <button className="flex gap-2 justify-center items-center bg-orange-shade-5 p-4 text-white rounded-full uppercase">
+          </Link>
+          <a
+            href="https://merchant.leverpay.io/welcome"
+            target="_blank"
+            className="flex gap-2 justify-center items-center bg-orange-shade-5 p-4 text-white rounded-full uppercase"
+          >
             Merchant Login <img src={arrowRight} alt="arrow right" />
-          </button>
+          </a>
         </nav>
       </div>
     </div>
