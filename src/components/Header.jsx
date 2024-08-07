@@ -144,7 +144,7 @@ const Header = () => {
           </a>
           <a href="#" className="hover:text-gray-200 px-4 py-2 text-center">
             API
-          </Link>
+          </a>
           <Link
             to="screenshot"
             spy={true}
