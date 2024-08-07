@@ -4,7 +4,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { PiInstagramLogoFill } from "react-icons/pi";
-import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 
@@ -21,9 +21,10 @@ const Footer = () => {
             features cater specifically to your business needs.
           </p>
           <p className="italic font-primaryRegular pb-10 text-justify">
-            Leverpay is a financial technology companies and not a bank. Our
-            Banking services are provided by our partner banks who are duly
-            licensed by the CBN.
+            Leverpay is a financial technology companies and not a bank.{" "}
+            <span className="text-orange-shade-5">Our Banking</span> services
+            are provided by our partner banks who are duly licensed by the{" "}
+            <span className="text-orange-shade-5">CBN.</span>
           </p>
           <div className="flex gap-3 pb-4">
             <a
@@ -43,7 +44,7 @@ const Footer = () => {
               href="https://twitter.com/leverpay?t=MWvBxPiogzWTMVAGGqVsPg&s=09"
               className="hover:text-orange-shade-5 transition duration-300"
             >
-              <FaTwitter size={20} />
+              <FaXTwitter size={20} />
             </a>
             <a
               href="https://www.instagram.com/leverpay.io?r=nametag"
@@ -65,12 +66,12 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <ul className="mb-6 md:mb-0">
+        <ul className="mb-2 md:mb-0">
           <li className="text-orange-shade-15 font-primarySemiBold pb-2">
             Navigation
           </li>
           <li className="font-primaryRegular leading-10 cursor-pointer">
-            Home
+            <Link to="/">Home</Link>
           </li>
           <li className="font-primaryRegular leading-10 cursor-pointer">
             About Us
@@ -91,7 +92,7 @@ const Footer = () => {
             <Link to="risk-policy">Risk Policy</Link>
           </li>
           <li className="font-primaryRegular leading-10 cursor-pointer">
-            <Link to="account-deactivation">Deactivation</Link>
+            <Link to="account-deactivation">Account Deactivation</Link>
           </li>
           <li className="font-primaryRegular leading-10 cursor-pointer">
             Invest with us
@@ -100,7 +101,7 @@ const Footer = () => {
             Partner with us
           </li>
         </ul>
-        <ul className="mb-6 md:mb-0">
+        <ul className="mb-2 md:mb-0">
           <li className="text-orange-shade-15 font-primarySemiBold pb-2">
             Contact
           </li>
@@ -117,11 +118,11 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Email Address"
-              className="pl-2 rounded-lg text-black font-primaryRegular placeholder:text-black focus:outline-none"
+              className="pl-2 max-w-[150px] rounded-lg text-black font-primaryRegular placeholder:text-black focus:outline-none"
             />
-            <span className="bg-orange-shade-10 p-3 rounded-r-lg">
+            <button className="bg-orange-shade-10 p-3 rounded-r-lg">
               <IoSend />
-            </span>
+            </button>
           </div>
         </div>
       </div>
