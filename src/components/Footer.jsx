@@ -1,10 +1,11 @@
-import Logo from '../assets/leverpay-logo.png';
-import { Link } from 'react-router-dom';
+import Logo from "../assets/leverpay-logo.png";
+import { Link } from "react-router-dom";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { FaTwitter } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 
 const Footer = () => {
@@ -23,14 +24,45 @@ const Footer = () => {
                         Leverpay is a financial technology company and not a bank. Our Banking services 
                         are provided by our partner banks who are duly licensed by the CBN.
                     </p>
-                    <div className='flex gap-1 pb-4'>
-                        <FaFacebookSquare size={20}/>
-                        <IoLogoYoutube size={20}/>
-                        <IoLogoWhatsapp size={20}/>
-                        <PiInstagramLogoFill size={20}/>
-                        <FaTwitter size={20}/>
-
-                    </div>
+                    <div className="flex gap-3 pb-4">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              className="hover:text-orange-shade-5 transition duration-300"
+            >
+              <FaFacebookSquare size={20} />
+            </a>
+            <a
+              href="#"
+              className="hover:text-orange-shade-5 transition duration-300"
+            >
+              <IoLogoWhatsapp size={20} />
+            </a>
+            <a
+              href="https://twitter.com/leverpay?t=MWvBxPiogzWTMVAGGqVsPg&s=09"
+              className="hover:text-orange-shade-5 transition duration-300"
+            >
+              <FaTwitter size={20} />
+            </a>
+            <a
+              href="https://www.instagram.com/leverpay.io?r=nametag"
+              className="hover:text-orange-shade-5 transition duration-300"
+            >
+              <PiInstagramLogoFill size={20} />
+            </a>
+            <a
+              href=""
+              className="hover:text-orange-shade-5 transition duration-300"
+            >
+              <FaTiktok size={20} />
+            </a>
+            <a
+              href="#"
+              className="hover:text-orange-shade-5 transition duration-300"
+            >
+              <IoLogoYoutube size={20} />
+            </a>
+          </div>
                 </div>
                 <ul className=''>
                     <li className='text-orange-shade-15 font-primarySemiBold pb-2'>Navigation</li>

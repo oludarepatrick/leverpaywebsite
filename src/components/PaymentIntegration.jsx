@@ -5,6 +5,7 @@ import customer_service from "../assets/images/customer_service.svg";
 import dashboard from "../assets/images/dashboard.svg";
 import marketing_support from "../assets/images/marketing_support.svg";
 import merchant_payment from "../assets/images/merchant_payment.svg";
+import virtualCard from "../assets/images/virtual-card.svg"
 import PaymentOption from "./PaymentOption";
 
 const paymentOptions = [
@@ -35,6 +36,10 @@ const paymentOptions = [
   {
     icon: customer_service,
     text: "24/7 customer services",
+  },
+  {
+    icon: virtualCard,
+    text: "Virtual USD Card",
   },
 ];
 
