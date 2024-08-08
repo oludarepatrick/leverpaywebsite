@@ -1,4 +1,5 @@
 import Logo from "../assets/leverpay-logo.png";
+import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
@@ -21,7 +22,7 @@ const Footer = () => {
             features cater specifically to your business needs.
           </p>
           <p className="italic font-primaryRegular pb-10 text-justify">
-            Leverpay is a financial technology companies and not a bank.{" "}
+            Leverpay is a financial technology company and not a bank.{" "}
             <span className="text-orange-shade-5">Our Banking</span> services
             are provided by our partner banks who are duly licensed by the{" "}
             <span className="text-orange-shade-5">CBN.</span>
@@ -70,44 +71,50 @@ const Footer = () => {
           <li className="text-orange-shade-15 font-primarySemiBold pb-2">
             Navigation
           </li>
-          <li className="font-primaryRegular leading-10 cursor-pointer">
-            <Link to="/">Home</Link>
+          <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
+            <a href="/">Home</a>
           </li>
-          <li className="font-primaryRegular leading-10 cursor-pointer">
+          <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
             About Us
           </li>
-          <li className="font-primaryRegular leading-10 cursor-pointer">
-            Features
+          <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
+            <ScrollLink to="features" smooth={true} duration={500}>
+              Features
+            </ScrollLink>
           </li>
-          <li className="font-primaryRegular leading-10 cursor-pointer">
-            Pricing
+          <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
+            <ScrollLink to="pricing" smooth={true} duration={500}>
+              Pricing
+            </ScrollLink>
           </li>
-          <li className="font-primaryRegular leading-10 cursor-pointer">
+          <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
             <Link to="/terms-and-conditions">Terms and Condition</Link>
           </li>
-          <li className="font-primaryRegular leading-10 cursor-pointer">
+          <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
             <Link to="privacy-policy">Privacy Policy</Link>
           </li>
-          <li className="font-primaryRegular leading-10 cursor-pointer">
+          <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
             <Link to="risk-policy">Risk Policy</Link>
           </li>
-          <li className="font-primaryRegular leading-10 cursor-pointer">
+          <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
             <Link to="account-deactivation">Account Deactivation</Link>
-          </li>
-          <li className="font-primaryRegular leading-10 cursor-pointer">
-            Invest with us
-          </li>
-          <li className="font-primaryRegular leading-10 cursor-pointer">
-            Partner with us
           </li>
         </ul>
         <ul className="mb-2 md:mb-0">
           <li className="text-orange-shade-15 font-primarySemiBold pb-2">
             Contact
           </li>
-          <li className="font-primaryRegular leading-10">+2349060898687</li>
-          <li className="font-primaryRegular leading-10">
+          <li className="font-primaryRegular leading-10 hover:underline">
+            +2349060898687
+          </li>
+          <li className="font-primaryRegular leading-10 hover:underline">
             contact@leverpay.io
+          </li>
+          <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
+            Invest with us
+          </li>
+          <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
+            Partner with us
           </li>
         </ul>
         <div className="">

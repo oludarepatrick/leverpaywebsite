@@ -28,16 +28,12 @@ const Header = () => {
             <IoMenu className="text-white w-10 h-10" />
           </button>
           <nav className="hidden lg:flex items-center text-blue-shade-20 gap-1 text-sm uppercase">
-            <Link
-              to="/"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
+            <a
+              href="/"
               className="hover:text-gray-200 px-4 py-2 bg-orange-shade-0 rounded-full text-white cursor-pointer"
             >
               Home
-            </Link>
+            </a>
             <Link
               to="features"
               spy={true}
@@ -63,18 +59,8 @@ const Header = () => {
               target="_blank"
               className="hover:text-gray-200 px-4 py-2 cursor-pointer"
             >
-              User Login
+              User
             </a>
-            <Link
-              to="API"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
-              className="hover:text-gray-200 px-4 py-2 cursor-pointer"
-            >
-              API
-            </Link>
             <Link
               to="screenshot"
               spy={true}
@@ -88,9 +74,9 @@ const Header = () => {
             <a
               href="https://merchant.leverpay.io/welcome"
               target="_blank"
-              className="flex gap-2 items-center bg-orange-shade-5 p-4 text-white rounded-[10px] uppercase"
+              className="flex gap-2 items-center bg-orange-shade-5 p-4 text-white rounded-full uppercase"
             >
-              Merchant Login <img src={arrowRight} alt="arrow right" />
+              Merchant <img src={arrowRight} alt="arrow right" />
             </a>
           </nav>
         </div>
@@ -140,10 +126,7 @@ const Header = () => {
             className="hover:text-gray-200 px-4 py-2 text-center"
             onClick={toggleMenu}
           >
-            User Login
-          </a>
-          <a href="#" className="hover:text-gray-200 px-4 py-2 text-center">
-            API
+            User
           </a>
           <Link
             to="screenshot"
@@ -162,7 +145,7 @@ const Header = () => {
             className="flex gap-2 justify-center items-center bg-orange-shade-5 p-4 text-white rounded-full uppercase"
             onClick={toggleMenu}
           >
-            Merchant Login <img src={arrowRight} alt="arrow right" />
+            Merchant <img src={arrowRight} alt="arrow right" />
           </a>
         </nav>
       </div>
