@@ -134,8 +134,8 @@ const Header = () => {
             smooth={true}
             offset={-100}
             duration={500}
-            className="hover:text-gray-200 px-4 py-2 text-center cursor-pointer"
             onClick={toggleMenu}
+            className="hover:text-gray-200 px-4 py-2 text-center cursor-pointer"
           >
             Screenshot
           </Link>
