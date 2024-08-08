@@ -19,29 +19,29 @@ const Home = () => {
     <>
       <Fade direction="up" triggerOnce>
         <div className="w-full p-2 sm:py-11 flex flex-col gap-8 relative">
-          <div className="container mx-auto">
+          <div className="container mx-auto min-[1380px]:px-[100px]">
             <Hero />
           </div>
         </div>
       </Fade>
-      <Slide direction="left" triggerOnce>
-        <div className="bg-white">
+      <div className="bg-white">
+        <Slide direction="left" triggerOnce>
           <Why />
-        </div>
-      </Slide>
+        </Slide>
+      </div>
       <Zoom triggerOnce>
         <div className="container mx-auto py-10" id="features">
           <Features />
         </div>
       </Zoom>
-      <Slide direction="right" triggerOnce>
-        <div className="bg-white">
+      <div className="bg-white">
+        <Slide direction="right" triggerOnce>
           <div className="container mx-auto">
             <PaymentIntegration />
           </div>
-        </div>
-      </Slide>
-      <Fade direction="up" triggerOnce>
+        </Slide>
+      </div>
+      <Fade direction="down" triggerOnce>
         <div className="bg-orange-shade-5">
           <div className="container mx-auto">
             <Reseller />
