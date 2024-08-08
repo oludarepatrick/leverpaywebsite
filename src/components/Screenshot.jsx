@@ -37,7 +37,6 @@ const Screenshot = () => {
     slidesToShow: 3,
     autoplay: true,
     autoplaySpeed: 2000,
-    // speed: 1000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
     responsive: [
@@ -55,7 +54,6 @@ const Screenshot = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          // initialSlide: 2
         },
       },
       {
@@ -64,8 +62,6 @@ const Screenshot = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          // nextArrow: false,
-          // prevArrow: false,
         },
       },
     ],
