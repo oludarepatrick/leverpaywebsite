@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import leverpayHome from "../assets/images/leverpay-home-1.png";
-import portraitMan from "../assets/images/portrait-man.png";
+import happyLady from "../assets/images/happy-lady.png";
 import googlePlay from "../assets/images/googlePlay.png";
 import React, { useEffect, useState } from "react";
 
@@ -11,7 +11,7 @@ const images = [
     highlight: [2], // Index of words to be highlighted
   },
   {
-    src: portraitMan,
+    src: happyLady,
     text: "Pay all your Bills With Leverpay at a Cheap Rate.",
     highlight: [3, 8], // Index of words to be highlighted
   },
