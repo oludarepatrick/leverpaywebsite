@@ -1,11 +1,12 @@
 import Logo from "../assets/leverpay-logo.png";
+import { Link as ScrollLink } from "react-scroll";
 import { Link } from "react-router-dom";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
-import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 
@@ -38,7 +39,7 @@ const Footer = () => {
               href="https://twitter.com/leverpay?t=MWvBxPiogzWTMVAGGqVsPg&s=09"
               className="hover:text-orange-shade-5 transition duration-300"
             >
-              <FaTwitter size={20} />
+              <FaXTwitter size={20} />
             </a>
             <a
               href="https://www.instagram.com/leverpay.io?r=nametag"

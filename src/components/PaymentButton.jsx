@@ -4,9 +4,9 @@ const PaymentButton = ({ link, className }) => {
   return (
     <a
       href={link}
-      className={`w-[114px] h-[114px] rounded-full bg-orange-shade-20 flex justify-center items-center ${className}` }
+      className={`w-20 h-20 sm:w-[114px] sm:h-[114px] rounded-full bg-orange-shade-20 flex justify-center items-center ${className}`}
     >
-      <MdOutlineArrowOutward className="w-[50px] h-[50px]" />
+      <MdOutlineArrowOutward className="w-10 h-10 sm:w-[50px] sm:h-[50px]" />
     </a>
   );
 };
