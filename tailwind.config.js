@@ -46,7 +46,7 @@ export default {
       },
     },
     animation: {
-      leftScroll: "leftScroll 20s linear infinite",
+      leftScroll: "leftScroll 5s linear infinite",
     },
   },
   plugins: [],
