@@ -4,10 +4,9 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaTiktok } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 
 const Footer = () => {
@@ -21,7 +20,7 @@ const Footer = () => {
         duration: 500,
         offset: -100,
       });
-    }, 100); // Adjust timeout as needed to ensure smooth scroll after navigation
+    }, 100);
   };
   return (
     <>
@@ -35,25 +34,19 @@ const Footer = () => {
             features cater specifically to your business needs.
           </p>
           <p className="italic font-primaryRegular pb-10 text-justify">
-            Leverpay is a financial technology company and not a bank.{" "}
-            <span className="text-orange-shade-5">Our Banking</span> services
-            are provided by our partner banks who are duly licensed by the{" "}
-            <span className="text-orange-shade-5">CBN.</span>
+            Leverpay (Leverchain Technology LTD) is a financial technology
+            company and not a bank. Our Banking services are provided by our
+            partner banks who are duly licensed by the CBN.
           </p>
           <div className="flex gap-3 pb-4">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/LeverPay?mibextid=ZbWKwL"
               target="_blank"
               className="hover:text-orange-shade-5 transition duration-300"
             >
               <FaFacebookSquare size={20} />
             </a>
-            <a
-              href="#"
-              className="hover:text-orange-shade-5 transition duration-300"
-            >
-              <IoLogoWhatsapp size={20} />
-            </a>
+
             <a
               href="https://twitter.com/leverpay?t=MWvBxPiogzWTMVAGGqVsPg&s=09"
               className="hover:text-orange-shade-5 transition duration-300"
@@ -67,13 +60,13 @@ const Footer = () => {
               <PiInstagramLogoFill size={20} />
             </a>
             <a
-              href=""
+              href="https://www.linkedin.com/company/leverpay-io/"
               className="hover:text-orange-shade-5 transition duration-300"
             >
-              <FaTiktok size={20} />
+              <FaLinkedin size={20} />
             </a>
             <a
-              href="#"
+              href="https://youtu.be/TYtHMCt5mEo"
               className="hover:text-orange-shade-5 transition duration-300"
             >
               <IoLogoYoutube size={20} />
@@ -145,9 +138,8 @@ const Footer = () => {
       <hr className=" container mx-auto my-4 border-white-shade-5" />
       <div className=" container mx-auto pb-4 px-2 md:flex md:justify-center font-primaryRegular text-center">
         <span className="block text-sm pb-3">
-          Copyright© 2024Leverpay. All Rights Reserved.
+          Copyright© 2024 Leverchain Technology Limited. All Rights Reserved.
         </span>
-        {/* <span className='block text-sm'>User Terms & Conditions | Privacy Policy</span> */}
       </div>
     </>
   );
