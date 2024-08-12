@@ -1,13 +1,39 @@
-import { useState } from "react";
-import { Link } from "react-scroll";
+import { useState, useEffect } from "react";
+import { scroller } from "react-scroll";
 import logo from "../assets/images/leverpaylogo.svg";
 import arrowRight from "../assets/images/arrow-right.svg";
-
-import { IoMenu } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
+import { IoMenu, IoClose } from "react-icons/io5";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollTo, setScrollTo] = useState(null);
+
+  useEffect(() => {
+    if (scrollTo) {
+      scroller.scrollTo(scrollTo, {
+        smooth: true,
+        duration: 500,
+        offset: -100,
+      });
+      setScrollTo(null); // Reset after scrolling
+    }
+  }, [location, scrollTo]);
+
+  const handleScroll = (section) => {
+    if (location.pathname !== "/") {
+      setScrollTo(section); // Save section to scroll to
+      navigate("/"); // Navigate to the homepage
+    } else {
+      scroller.scrollTo(section, {
+        smooth: true,
+        duration: 500,
+        offset: -100,
+      });
+    }
+  };
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -34,46 +60,36 @@ const Header = () => {
             >
               Home
             </a>
-            <Link
-              to="features"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+            <div
+              onClick={() => handleScroll("features")}
               className="hover:text-gray-200 px-4 py-2 cursor-pointer"
             >
               Features
-            </Link>
-            <Link
-              to="pricing"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+            </div>
+            <div
+              onClick={() => handleScroll("pricing")}
               className="hover:text-gray-200 px-4 py-2 cursor-pointer"
             >
               Pricing
-            </Link>
+            </div>
             <a
               href="https://user.leverpay.io/"
               target="_blank"
+              rel="noopener noreferrer"
               className="hover:text-gray-200 px-4 py-2 cursor-pointer"
             >
               User
             </a>
-            <Link
-              to="screenshot"
-              spy={true}
-              smooth={true}
-              offset={-100}
-              duration={500}
+            <div
+              onClick={() => handleScroll("screenshot")}
               className="hover:text-gray-200 px-4 py-2 cursor-pointer"
             >
               Screenshot
-            </Link>
+            </div>
             <a
               href="https://merchant.leverpay.io/welcome"
               target="_blank"
+              rel="noopener noreferrer"
               className="flex gap-2 items-center bg-orange-shade-5 p-4 text-white rounded-full uppercase"
             >
               Merchant <img src={arrowRight} alt="arrow right" />
@@ -98,50 +114,46 @@ const Header = () => {
           >
             Home
           </a>
-          <Link
-            to="features"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
+          <div
+            onClick={() => {
+              handleScroll("features");
+              toggleMenu();
+            }}
             className="hover:text-gray-200 px-4 py-2 text-center cursor-pointer"
-            onClick={toggleMenu}
           >
             Features
-          </Link>
-          <Link
-            to="pricing"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
+          </div>
+          <div
+            onClick={() => {
+              handleScroll("pricing");
+              toggleMenu();
+            }}
             className="hover:text-gray-200 px-4 py-2 text-center cursor-pointer"
-            onClick={toggleMenu}
           >
             Pricing
-          </Link>
+          </div>
           <a
             href="https://user.leverpay.io/"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-gray-200 px-4 py-2 text-center"
             onClick={toggleMenu}
           >
             User
           </a>
-          <Link
-            to="screenshot"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={500}
-            onClick={toggleMenu}
+          <div
+            onClick={() => {
+              handleScroll("screenshot");
+              toggleMenu();
+            }}
             className="hover:text-gray-200 px-4 py-2 text-center cursor-pointer"
           >
             Screenshot
-          </Link>
+          </div>
           <a
             href="https://merchant.leverpay.io/welcome"
             target="_blank"
+            rel="noopener noreferrer"
             className="flex gap-2 justify-center items-center bg-orange-shade-5 p-4 text-white rounded-full uppercase"
             onClick={toggleMenu}
           >

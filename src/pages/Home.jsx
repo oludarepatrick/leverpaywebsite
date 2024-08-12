@@ -12,7 +12,6 @@ import GetStarted from "../components/GetStarted";
 import Why from "../components/Why";
 import PaymentIntegration from "../components/PaymentIntegration";
 import Reseller from "../components/Reseller";
-import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
   return (
@@ -85,7 +84,6 @@ const Home = () => {
         <GetStarted />
       </Fade>
       <hr className="container mx-auto my-4 border-white-shade-5" />
-      <ScrollToTop />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import Logo from "../assets/leverpay-logo.png";
-import { Link as ScrollLink } from "react-scroll";
+import { scroller } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FaFacebookSquare } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
@@ -10,6 +11,18 @@ import { FaTiktok } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const scrollToSection = (section) => {
+    navigate("/");
+    setTimeout(() => {
+      scroller.scrollTo(section, {
+        smooth: true,
+        duration: 500,
+        offset: -100,
+      });
+    }, 100); // Adjust timeout as needed to ensure smooth scroll after navigation
+  };
   return (
     <>
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-start pt-6 px-4 md:px-2 gap-4 ">
@@ -78,14 +91,10 @@ const Footer = () => {
             About Us
           </li>
           <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
-            <ScrollLink to="features" smooth={true} duration={500}>
-              Features
-            </ScrollLink>
+            <span onClick={() => scrollToSection("features")}> Features </span>
           </li>
           <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
-            <ScrollLink to="pricing" smooth={true} duration={500}>
-              Pricing
-            </ScrollLink>
+            <span onClick={() => scrollToSection("pricing")}> Pricing </span>
           </li>
           <li className="font-primaryRegular leading-10 cursor-pointer hover:text-orange-shade-5 transition duration-300">
             <Link to="/terms-and-conditions">Terms and Condition</Link>
